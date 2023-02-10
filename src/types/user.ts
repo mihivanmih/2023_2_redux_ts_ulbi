@@ -22,7 +22,7 @@ interface FetchUsersSuccessAction {
 
 interface FetchUsersErrorAction {
     type: UserActionTypes.FETCH_USERS_ERROR
-    payload?: string | null | undefined
+    payload: string
 }
 
 export type userAction = FetchUsersAction | FetchUsersSuccessAction | FetchUsersErrorAction
